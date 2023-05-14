@@ -1,0 +1,38 @@
+### Cadastrar cliente 1
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+{
+  "nome": "Fulano da Silva",
+  "email": "fulano.silva@gmail.com",
+  "cpf": "12345678910"
+}
+
+### Cadastrar cliente 2
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+{
+  "nome": "Maria Silva",
+  "email": "maria.silva@gmail.com",
+  "cpf": "12345678900"
+}
+
+### Listar
+GET http://localhost:3000/clientes
+
+### Buscar
+GET http://localhost:3000/clientes/3
+
+### Deletar
+DELETE http://localhost:3000/clientes/4
+
+### Deletar
+PUT http://localhost:3000/clientes/2
+Content-Type: application/json
+
+{
+  "nome": "Mariana Silva",
+  "email": "maria.silva@gmail.com",
+  "cpf": "12345678900"
+}

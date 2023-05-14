@@ -1,0 +1,44 @@
+### Cadastrar livro 1
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+  "nome": "O Senhor dos Anéis",
+  "autor": "J.R.R. Tolkien",
+  "categoria": "Fantasia",
+  "ano": 1954,
+  "quantidade": 10
+}
+
+### Cadastrar livro 2
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+  "nome": "O Pequeno Príncipe",
+  "autor": "algum autor",
+  "categoria": "Fantasia",
+  "ano": 2001,
+  "quantidade": 8
+}
+
+### Listar
+GET http://localhost:3000/livros
+
+### Buscar
+GET http://localhost:3000/livros/2
+
+### Deletar
+DELETE http://localhost:3000/livros/1
+
+### Atualizar
+PUT http://localhost:3000/livros/3
+Content-Type: application/json
+
+{
+  "nome": "O Pequeno Príncipe",
+  "autor": "Antoine de Saint-Exupéry",
+  "categoria": "Fantasia",
+  "ano": 2001,
+  "quantidade": 8
+}

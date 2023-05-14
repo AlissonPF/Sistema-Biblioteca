@@ -1,0 +1,29 @@
+### Cadastrar emprestimo 1
+POST http://localhost:3000/emprestimos
+Content-Type: application/json
+
+{
+  "clienteId": 3,
+  "livroId": 4
+}
+
+### Cadastrar emprestimo 2
+POST http://localhost:3000/emprestimos
+Content-Type: application/json
+
+{
+  "clienteId": 2,
+  "livroId": 3
+}
+
+### Listar
+GET http://localhost:3000/emprestimos
+
+### Buscar
+GET http://localhost:3000/emprestimos/2
+
+### Deletar
+DELETE http://localhost:3000/emprestimos/2
+
+### Devolver
+PUT http://localhost:3000/emprestimos/1
